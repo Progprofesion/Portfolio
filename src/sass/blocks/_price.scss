@@ -1,0 +1,35 @@
+.price {
+    padding-top: 120px;
+
+    &__wrapper {
+        padding: 60px 50px 0 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 366px);
+        column-gap: 305px;
+        row-gap: 15px;
+    }
+
+    &__item {
+        min-height: 45px;
+
+        &-title {
+            position: relative;
+            @include before_mincircle;
+
+            &:before {
+                left: -25px;
+                top: 10px;
+            }
+        }
+
+        &-wrapp {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 25px;
+        }
+    }
+
+    &__descr {
+        padding-left: 25px;
+    }
+}
